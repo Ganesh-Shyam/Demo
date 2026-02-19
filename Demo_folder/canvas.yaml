@@ -1,5 +1,5 @@
 id: a474033b-c09e-4baf-ac71-1bf5861d9686
-name: Sales analysis pull
+name: Jagex Demo
 project_id: 4ca570a3-0702-4b56-bff0-c555336a41b2
 global_imports: []
 python_global_imports: ''
@@ -78,8 +78,29 @@ layers:
     width: 1600
     x: 4000
     y: 500
+  - auto_size: false
+    canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
+    compute_settings: null
+    description: Prints test message (placeholder block requiring code implementation)
+    height: 1000
+    id: f533dee6-8c57-4726-ad9e-16259cbaaa31
+    layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
+    name: New block
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 4000
+    y: 1000
   canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
   edges:
+  - canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
+    id: 5e2a0967-df9b-4340-9925-4e571c92b938
+    layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
+    source: f0b0ef12-8ea6-4645-9989-da13612813f3
+    target: f533dee6-8c57-4726-ad9e-16259cbaaa31
   - canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
     id: 74dc1f68-2a3d-46a8-bcf0-1eebed5ae8aa
     layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c

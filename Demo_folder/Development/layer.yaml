@@ -1,0 +1,88 @@
+id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
+name: Development
+type: 1
+canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
+blocks:
+- auto_size: false
+  canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
+  compute_settings: null
+  description: Loads trained model and generates age predictions on test data
+  height: 1000
+  id: 26095eef-a848-4284-8bff-f428b6d426e7
+  layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
+  name: load_verify_predictions
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 4000
+  y: 0
+- auto_size: false
+  canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
+  compute_settings: null
+  description: Trains linear regression model to predict age from ID, evaluates performance,
+    and saves trained model to pickle file
+  height: 1000
+  id: 33b60c2d-2203-47a7-ab78-ab53fe8354b8
+  layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
+  name: train_save_ml_model
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 0
+- auto_size: false
+  canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
+  compute_settings: null
+  description: Creates sample dataframe with 5 records, saves to pickle file, then
+    loads and verifies data integrity
+  height: 1000
+  id: 7c73643b-8ebb-46d9-9f67-817f3874efd0
+  layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
+  name: create_save_read_pickle
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 0
+- auto_size: false
+  canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
+  compute_settings: null
+  description: Creates and saves a TensorFlow neural network model, then loads and
+    verifies its structure
+  height: 1000
+  id: f0b0ef12-8ea6-4645-9989-da13612813f3
+  layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
+  name: save_load_keras_model
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 4000
+  y: 500
+edges:
+- canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
+  id: 74dc1f68-2a3d-46a8-bcf0-1eebed5ae8aa
+  layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
+  source: 33b60c2d-2203-47a7-ab78-ab53fe8354b8
+  target: 26095eef-a848-4284-8bff-f428b6d426e7
+- canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
+  id: 90281c6a-3d59-4271-9630-956dcf755772
+  layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
+  source: 26095eef-a848-4284-8bff-f428b6d426e7
+  target: f0b0ef12-8ea6-4645-9989-da13612813f3
+- canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
+  id: f2d0bea1-4b45-48fe-897a-6ef4712f777d
+  layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
+  source: 7c73643b-8ebb-46d9-9f67-817f3874efd0
+  target: 33b60c2d-2203-47a7-ab78-ab53fe8354b8

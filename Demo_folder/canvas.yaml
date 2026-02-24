@@ -2,7 +2,9 @@ id: a474033b-c09e-4baf-ac71-1bf5861d9686
 name: Jagex Demo
 project_id: 4ca570a3-0702-4b56-bff0-c555336a41b2
 global_imports: []
-python_global_imports: ''
+python_global_imports: 'import pandas as pd
+
+  '
 r_global_imports: ''
 requirements: []
 linux_packages: []
@@ -21,7 +23,7 @@ layers:
     name: load_verify_predictions
     parent_id: null
     properties: {}
-    status: 3
+    status: 1
     type: 1
     variables: null
     width: 1600
@@ -38,7 +40,7 @@ layers:
     name: train_save_ml_model
     parent_id: null
     properties: {}
-    status: 3
+    status: 1
     type: 1
     variables: null
     width: 1600
@@ -55,7 +57,7 @@ layers:
     name: create_save_read_pickle
     parent_id: null
     properties: {}
-    status: 3
+    status: 1
     type: 1
     variables: null
     width: 1600
@@ -72,7 +74,7 @@ layers:
     name: save_load_keras_model
     parent_id: null
     properties: {}
-    status: 3
+    status: 1
     type: 1
     variables: null
     width: 1600
@@ -88,7 +90,7 @@ layers:
     name: New block
     parent_id: null
     properties: {}
-    status: 3
+    status: 1
     type: 1
     variables: null
     width: 1600

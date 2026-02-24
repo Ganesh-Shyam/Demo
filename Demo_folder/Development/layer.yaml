@@ -13,7 +13,7 @@ blocks:
   name: load_verify_predictions
   parent_id: null
   properties: {}
-  status: 3
+  status: 1
   type: 1
   variables: null
   width: 1600
@@ -30,7 +30,7 @@ blocks:
   name: train_save_ml_model
   parent_id: null
   properties: {}
-  status: 3
+  status: 1
   type: 1
   variables: null
   width: 1600
@@ -47,7 +47,7 @@ blocks:
   name: create_save_read_pickle
   parent_id: null
   properties: {}
-  status: 3
+  status: 1
   type: 1
   variables: null
   width: 1600
@@ -64,7 +64,7 @@ blocks:
   name: save_load_keras_model
   parent_id: null
   properties: {}
-  status: 3
+  status: 1
   type: 1
   variables: null
   width: 1600
@@ -80,7 +80,7 @@ blocks:
   name: New block
   parent_id: null
   properties: {}
-  status: 3
+  status: 1
   type: 1
   variables: null
   width: 1600

@@ -1,0 +1,124 @@
+id: fcab895f-9734-4cb3-8bf2-e22bad863417
+name: Jagex Demo (Copy - 20260224164245)
+project_id: 3841f3ca-3851-4989-b8da-503677bb77bc
+global_imports: []
+python_global_imports: 'import pandas as pd
+
+  '
+r_global_imports: ''
+requirements: []
+linux_packages: []
+environment_variables: []
+is_public: false
+organization_id: a4be0e36-360c-4e43-abc8-261661a3ce6f
+layers:
+- blocks:
+  - auto_size: false
+    canvas_id: fcab895f-9734-4cb3-8bf2-e22bad863417
+    compute_settings: null
+    description: Loads trained model and generates age predictions on test data
+    height: 1000
+    id: 50836afc-05be-4ea5-bd2b-402d2486dccf
+    layer_id: 6f5c1c98-aea3-4751-a100-d005f2ccc203
+    name: load_verify_predictions
+    parent_id: null
+    properties: {}
+    status: 1
+    type: 1
+    variables: null
+    width: 1600
+    x: 4000
+    y: 0
+  - auto_size: false
+    canvas_id: fcab895f-9734-4cb3-8bf2-e22bad863417
+    compute_settings: null
+    description: Prints test message (placeholder block requiring code implementation)
+    height: 1000
+    id: 61fdc073-08a1-41ea-8268-c1d083f5fb03
+    layer_id: 6f5c1c98-aea3-4751-a100-d005f2ccc203
+    name: New block
+    parent_id: null
+    properties: {}
+    status: 1
+    type: 1
+    variables: null
+    width: 1600
+    x: 4000
+    y: 1000
+  - auto_size: false
+    canvas_id: fcab895f-9734-4cb3-8bf2-e22bad863417
+    compute_settings: null
+    description: Creates sample dataframe with 5 records, saves to pickle file, then
+      loads and verifies data integrity
+    height: 1000
+    id: 62898691-bac7-4a87-b9fd-287e53e893ce
+    layer_id: 6f5c1c98-aea3-4751-a100-d005f2ccc203
+    name: create_save_read_pickle
+    parent_id: null
+    properties: {}
+    status: 1
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 0
+  - auto_size: false
+    canvas_id: fcab895f-9734-4cb3-8bf2-e22bad863417
+    compute_settings: null
+    description: Trains linear regression model to predict age from ID, evaluates
+      performance, and saves trained model to pickle file
+    height: 1000
+    id: 9bc14ec4-e0d3-4659-b3f4-2eedd442dca3
+    layer_id: 6f5c1c98-aea3-4751-a100-d005f2ccc203
+    name: train_save_ml_model
+    parent_id: null
+    properties: {}
+    status: 1
+    type: 1
+    variables: null
+    width: 1600
+    x: 2000
+    y: 0
+  - auto_size: false
+    canvas_id: fcab895f-9734-4cb3-8bf2-e22bad863417
+    compute_settings: null
+    description: Creates and saves a TensorFlow neural network model, then loads and
+      verifies its structure
+    height: 1000
+    id: c01f2b8a-0c81-46af-a98a-5f00e1fe59ef
+    layer_id: 6f5c1c98-aea3-4751-a100-d005f2ccc203
+    name: save_load_keras_model
+    parent_id: null
+    properties: {}
+    status: 1
+    type: 1
+    variables: null
+    width: 1600
+    x: 4000
+    y: 500
+  canvas_id: fcab895f-9734-4cb3-8bf2-e22bad863417
+  edges:
+  - canvas_id: fcab895f-9734-4cb3-8bf2-e22bad863417
+    id: 5a6f453b-f626-4229-b8eb-0585b729d2a8
+    layer_id: 6f5c1c98-aea3-4751-a100-d005f2ccc203
+    source: c01f2b8a-0c81-46af-a98a-5f00e1fe59ef
+    target: 61fdc073-08a1-41ea-8268-c1d083f5fb03
+  - canvas_id: fcab895f-9734-4cb3-8bf2-e22bad863417
+    id: 6185957a-a657-4cec-89e7-7e5adbe8c0de
+    layer_id: 6f5c1c98-aea3-4751-a100-d005f2ccc203
+    source: 9bc14ec4-e0d3-4659-b3f4-2eedd442dca3
+    target: 50836afc-05be-4ea5-bd2b-402d2486dccf
+  - canvas_id: fcab895f-9734-4cb3-8bf2-e22bad863417
+    id: cdb08fe2-44f8-4061-bfbb-dec96de8d286
+    layer_id: 6f5c1c98-aea3-4751-a100-d005f2ccc203
+    source: 50836afc-05be-4ea5-bd2b-402d2486dccf
+    target: c01f2b8a-0c81-46af-a98a-5f00e1fe59ef
+  - canvas_id: fcab895f-9734-4cb3-8bf2-e22bad863417
+    id: dabd0808-fb0b-4366-ac4a-7c1778dc7ee5
+    layer_id: 6f5c1c98-aea3-4751-a100-d005f2ccc203
+    source: 62898691-bac7-4a87-b9fd-287e53e893ce
+    target: 9bc14ec4-e0d3-4659-b3f4-2eedd442dca3
+  id: 6f5c1c98-aea3-4751-a100-d005f2ccc203
+  name: Development
+  type: 1
+assets: []

@@ -49,6 +49,25 @@ layers:
   - auto_size: false
     canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
     compute_settings: null
+    description: Attempts to query dummy_df dataframe but currently fails - dataframe
+      not available in QUERY context
+    height: 1000
+    id: 360af270-5d97-4451-89a5-864b1c5fff7c
+    layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
+    name: select_dummy_df
+    parent_id: null
+    properties:
+      input_dataframe: true
+      output_variable: df
+    status: 3
+    type: 3
+    variables: null
+    width: 1600
+    x: 4000
+    y: -500
+  - auto_size: false
+    canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
+    compute_settings: null
     description: Placeholder block that prints an empty string
     height: 1000
     id: 3d919a16-fba3-4179-8719-ebdd5c92bd0b
@@ -56,7 +75,7 @@ layers:
     name: print
     parent_id: null
     properties: {}
-    status: 3
+    status: 1
     type: 1
     variables: null
     width: 1600
@@ -115,20 +134,25 @@ layers:
   canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
   edges:
   - canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
+    id: 22e6241b-7a96-4860-bf48-73e206d02ebc
+    layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
+    source: 360af270-5d97-4451-89a5-864b1c5fff7c
+    target: 26095eef-a848-4284-8bff-f428b6d426e7
+  - canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
     id: 5e2a0967-df9b-4340-9925-4e571c92b938
     layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
     source: f0b0ef12-8ea6-4645-9989-da13612813f3
     target: f533dee6-8c57-4726-ad9e-16259cbaaa31
   - canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
-    id: 74dc1f68-2a3d-46a8-bcf0-1eebed5ae8aa
-    layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
-    source: 33b60c2d-2203-47a7-ab78-ab53fe8354b8
-    target: 26095eef-a848-4284-8bff-f428b6d426e7
-  - canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
     id: 90281c6a-3d59-4271-9630-956dcf755772
     layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
     source: 26095eef-a848-4284-8bff-f428b6d426e7
     target: f0b0ef12-8ea6-4645-9989-da13612813f3
+  - canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
+    id: a05cc9b3-72ab-4521-bc65-5c11a053ede2
+    layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
+    source: 33b60c2d-2203-47a7-ab78-ab53fe8354b8
+    target: 360af270-5d97-4451-89a5-864b1c5fff7c
   - canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
     id: e932c540-f4f7-4111-bcb3-e00a055d3565
     layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c

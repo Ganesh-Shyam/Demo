@@ -68,14 +68,14 @@ layers:
   - auto_size: false
     canvas_id: a474033b-c09e-4baf-ac71-1bf5861d9686
     compute_settings: null
-    description: Placeholder block that prints an empty string
+    description: Calls a hello() function but produces no output
     height: 1000
     id: 3d919a16-fba3-4179-8719-ebdd5c92bd0b
     layer_id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
     name: print
     parent_id: null
     properties: {}
-    status: 1
+    status: 3
     type: 1
     variables: null
     width: 1600
@@ -166,4 +166,7 @@ layers:
   id: 5fed2ed2-b280-4d79-b69f-f9210ea3873c
   name: Development
   type: 1
-assets: []
+assets:
+- id: 1e1e86b3-45dc-4e4d-a0f7-6111c0cf5db1
+  name: Hello_world
+  type: function

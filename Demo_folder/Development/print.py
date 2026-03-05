@@ -1,1 +1,1 @@
-print("Save")
+hello()
